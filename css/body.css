@@ -1,0 +1,165 @@
+
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0; padding:0; 	/*全要素のマージン・パディングをリセット*/
+	color:#333333;		/*文字色*/
+} 
+body{
+	font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+	line-height:1.5;
+	/*color:#313131;*/
+	color:#333333;
+}
+
+
+/*****BRANDING*****/
+#branding{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    overflow: hidden;
+    background-color: #313131;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    line-height: 100px;
+}
+#branding p{
+    color: #fff;
+    font-size: 120%;
+    padding-left: 3%;
+}
+/*****MENU*****/
+.menu {
+	width:700px;
+	padding:0;
+	margin: auto;
+	list-style-type: none;
+}
+.list {
+  width:70px;
+  float:left;
+  padding:0;
+  text-align:center;
+  display:inline;
+}
+.link {
+  width:auto;
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  padding:10px 0;
+  text-decoration:none;
+  display:block;
+  background:#666;
+}
+.link:hover {
+  background:#555;
+}
+.current {
+	  width:auto;
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  padding:10px 0;
+  text-decoration:none;
+  display:block;
+  background:#333;
+}
+/*****SIDE MENU*****/
+div#submenu {
+	width:160px;			/*幅の指定*/
+	margin:10px 10px 10px 25px;	/*位置調整（IE6のバグに注意）*/
+	float:left;			/*サブメニューのカラムを左寄せにする*/
+}
+
+/*サブメニューのヘッダ部分（余白調整・背景画像・背景色・文字サイズなど）*/
+div#submenu_header {
+	height:26px; 
+	padding:4px 0px 0px 0px;
+	background-color:#cccccc;
+	font-size:90%;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*サブメニューのボディ部分（余白調整・背景画像・背景色）*/
+ul#submenu_body  {
+	float:left;
+	padding-bottom:6px;
+	clear:left;
+}
+ul#submenu_body li {
+	font-size:90%;			/*文字サイズを90%にする*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+}
+ul#submenu_body li a {
+	display:block;			/*リンクをブロック表示にする*/
+	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
+	padding:2px 20px 2px 20px;	/*サブメニュー項目のパディング*/
+	background-color:#c9c6c6;	/*サブメニュー項目の背景色*/
+	text-decoration:none;		/*リンクの下線を無くす*/
+}
+ul#submenu_body li a:hover {
+	background-color:#331212;	/*リンクにマウスが乗ったら色を変える*/
+}
+ul#submenu_body li current {
+  display:block;			/*リンクをブロック表示にする*/
+	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
+	padding:2px 20px 2px 20px;	/*サブメニュー項目のパディング*/
+	text-decoration:none;		/*リンクの下線を無くす*/
+  background-color:black;	/*current*/
+}
+
+/*****Block A*****/
+div.mainA {
+	width:300px;			/*幅の指定*/
+	float: left;
+	margin:10px 10px 10px 25px;	/*位置調整（IE6のバグに注意）*/
+	margin: auto;
+
+}
+/*****Block B*****/
+div.mainB {
+	float: left;
+	width:300px;			/*幅の指定*/
+	margin:10px 10px 10px 25px;	/*位置調整（IE6のバグに注意）*/
+	margin: auto;
+}
+
+
+.button a{
+    position: relative;
+    margin:10px 10px 10px 25px;
+	display: block;
+    font-weight: bold;
+    padding: 25px 25px 25px 25px;
+    text-decoration: none;
+    color: #0c0b0b;
+    background: #ECECEC;
+    transition: .4s;
+  }
+
+.button a:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+
+.button2 a{
+	position: relative;
+	margin:10px 10px 10px 25px;
+display: block;
+	font-weight: bold;
+	padding: 25px 25px 25px 25px;
+	text-decoration: none;
+	color: #0a0909;
+	background: #c9c6c6;
+	transition: .4s;
+}
+
+.button2 a:hover {
+	background: #00bcd4;
+	color: white;
+}
